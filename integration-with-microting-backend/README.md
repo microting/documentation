@@ -18,11 +18,11 @@ Authenticate a user.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="Username" type="string" required=false %}
+{% api-method-parameter name="Username" type="string" required=true %}
 admin@admin.com
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="Password" type="string" %}
+{% api-method-parameter name="Password" type="string" required=true %}
 Qq1234567$
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
