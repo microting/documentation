@@ -8,5 +8,5 @@
 * Single item/event planning
 * [Outer + Inner resource time registration](outer-+-inner-resource-time-registration.md) 
 
-In order for you to be able to integrate with any plugin, you first need to obtain the access\_token as described in [Integration with Microting Backend](../integration-with-microting-backend.md)
+In order for you to be able to integrate with any plugin, you first need to obtain the access\_token as described in [Integration with Microting Backend](../integration-with-microting-backend/)
 

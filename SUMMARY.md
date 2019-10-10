@@ -20,5 +20,6 @@
   * [Adding a menu item](plugins/adding-a-menu-point.md)
 * [Microting plugins](microting-plugins/README.md)
   * [Outer + Inner resource time registration](microting-plugins/outer-+-inner-resource-time-registration.md)
-* [Integration with Microting Backend](integration-with-microting-backend.md)
+* [Integration with Microting Backend](integration-with-microting-backend/README.md)
+  * [Device users](integration-with-microting-backend/device-users.md)
 
