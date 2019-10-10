@@ -102,7 +102,7 @@ Last name of the user to create, eg: Doe
 
 {% api-method method="post" host="http://locahost:5000" path="/api/device-users/update" %}
 {% api-method-summary %}
-
+Update a device user
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -151,7 +151,7 @@ Last name of the user to update, eg: Doe
 
 {% api-method method="delete" host="http://locahost:5000" path="/api/device-users/delete" %}
 {% api-method-summary %}
-
+Delete a device user
 {% endapi-method-summary %}
 
 {% api-method-description %}
