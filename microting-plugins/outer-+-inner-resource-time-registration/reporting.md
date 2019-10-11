@@ -1,37 +1,27 @@
-# Reporting
+# Resource time registrations
 
-{% api-method method="get" host="https://api.cakes.com" path="/v1/cakes/:id" %}
+{% api-method method="get" host="http://localhost:5000" path="/api/outer-inner-resource-pn/resource-time-registrations" %}
 {% api-method-summary %}
-Get Cakes
+Get time registrations
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get free cakes.
+This endpoint will return up to 10 time registrations at a time.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID of the cake to get, for free of course.
+{% api-method-parameter name="lastRegistrationId" type="string" %}
+ID of the last registration you pulled, starts from 0
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
 {% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token to track down who is emptying our stocks.
+Bearer access\_token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
-{% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -42,21 +32,23 @@ Cake successfully retrieved.
 
 ```javascript
 {
-    "name": "Cake's name",
-    "recipe": "Cake's recipe name",
-    "cake": "Binary cake"
-}
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
-```javascript
-{
-    "message": "Ain't no cake like that."
+	"model": {
+		"resourceTimeRegistrationModels": [{
+			"id": 1,
+			"doneAt": "2019-10-11T08:54:57.050Z",
+			"outerResourceName": "Outer resource 1",
+			"outerResourceId": 1,
+			"innerResourceName": "Inner resource 1",
+			"innerResourceId": 10,
+			"timeInSeconds": 4242,
+			"doneByDeviceUserId": 1,
+			"doneByDeviceUserName": "John Doe",
+			"sdkCaseId": 3223
+		}],
+		"lastResourceTimeRegistrationId": 1
+	},
+	"success": true,
+	"message": "string"
 }
 ```
 {% endapi-method-response-example %}

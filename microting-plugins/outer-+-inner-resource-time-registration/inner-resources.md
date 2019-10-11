@@ -2,7 +2,7 @@
 
 {% api-method method="get" host="http://localhost:5000" path="/api/outer-inner-resource-pn/inner-resources" %}
 {% api-method-summary %}
-Get all outer resources
+Get all inner resources
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -48,23 +48,23 @@ Cake successfully retrieved.
 
 ```javascript
 {
-	"model": {
-		"total": 2,
-		"outerResourceList": [{
-				"id": 2,
-				"name": "Inner resource 1",
-				"relatedInnerResourcesIds": null
-			},
-			{
-				"id": 3,
-				"name": "Inner resource 2",
-				"relatedInnerResourcesIds": null
-			}
-		],
-		"name": "Inner resources"
-	},
-	"success": true,
-	"message": "Success"
+    "model": {
+        "total": 2,
+        "outerResourceList": [{
+                "id": 2,
+                "name": "Inner resource 1",
+                "relatedInnerResourcesIds": null
+            },
+            {
+                "id": 3,
+                "name": "Inner resource 2",
+                "relatedInnerResourcesIds": null
+            }
+        ],
+        "name": "Inner resources"
+    },
+    "success": true,
+    "message": "Success"
 }
 ```
 {% endapi-method-response-example %}
@@ -74,7 +74,7 @@ Cake successfully retrieved.
 
 {% api-method method="post" host="http://localhost:5000" path="/api/outer-inner-resource-pn/inner-resources" %}
 {% api-method-summary %}
-Create a new outer resource
+Create a new inner resource
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -106,10 +106,10 @@ List of inner resource ids or null
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
-	"success": true,
-	"message": "Inner resource created successfully"
+    "success": true,
+    "message": "Inner resource created successfully"
 }
 ```
 {% endapi-method-response-example %}
@@ -119,7 +119,7 @@ List of inner resource ids or null
 
 {% api-method method="put" host="http://localhost:5000" path="/api/outer-inner-resource-pn/inner-resources" %}
 {% api-method-summary %}
-Update an outer resource
+Update an inner resource
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -153,8 +153,8 @@ List of inner resource ids or null
 
 ```javascript
 {
-	"success": true,
-	"message": "Inner resource updated successfully"
+    "success": true,
+    "message": "Inner resource updated successfully"
 }
 ```
 {% endapi-method-response-example %}
@@ -164,7 +164,7 @@ List of inner resource ids or null
 
 {% api-method method="delete" host="http://localhost:5000" path="/api/outer-inner-resource-pn/inner-resources" %}
 {% api-method-summary %}
-Delete an outer resource
+Delete an inner resource
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -194,11 +194,12 @@ Bearer access\_token
 
 ```javascript
 {
-	"success": true,
-	"message": "Inner resource deleted successfully"
+    "success": true,
+    "message": "Inner resource deleted successfully"
 }
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+

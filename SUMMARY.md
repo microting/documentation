@@ -22,9 +22,8 @@
   * [Outer + Inner resource time registration](microting-plugins/outer-+-inner-resource-time-registration/README.md)
     * [Outer resources](microting-plugins/outer-+-inner-resource-time-registration/outer-resources.md)
     * [Inner resources](microting-plugins/outer-+-inner-resource-time-registration/inner-resources.md)
-    * [Binding of outer and inner resources](microting-plugins/outer-+-inner-resource-time-registration/binding-of-outer-and-inner-resources.md)
     * [Association of device users](microting-plugins/outer-+-inner-resource-time-registration/association-of-device-users.md)
-    * [Reporting](microting-plugins/outer-+-inner-resource-time-registration/reporting.md)
+    * [Resource time registrations](microting-plugins/outer-+-inner-resource-time-registration/reporting.md)
 * [Integration with Microting Backend](integration-with-microting-backend/README.md)
   * [Device users](integration-with-microting-backend/device-users.md)
 
