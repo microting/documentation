@@ -4,7 +4,8 @@ In order for you to be able to communicate with any API endpoints published with
 
 After obtaining the access\_token as shown in the example below, the token must be inserted as a header attribute Authorization: Bearer access\_token. It's important to prepend the access\_token with "Bearer ".
 
-We will assume for the examples that you have a user with email admin@admin.com and the password Qq1234567$. This is the same email and password used in the automated tests and the dev environment is running at localhost:5000.
+We will assume for the examples that you have a user with email admin@admin.com and the password Qq1234567$. This is the same email and password used in the automated tests.   
+And we will assume the development environment is running at localhost:5000.
 
 {% api-method method="post" host="http://localhost:5000" path="/api/auth/token" %}
 {% api-method-summary %}
