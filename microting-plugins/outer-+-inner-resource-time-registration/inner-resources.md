@@ -1,35 +1,41 @@
 # Inner resources
 
-{% api-method method="get" host="https://api.cakes.com" path="/v1/cakes/:id" %}
+{% api-method method="get" host="http://localhost:5000" path="/api/outer-inner-resource-pn/inner-resources" %}
 {% api-method-summary %}
-Get Cakes
+Get all outer resources
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get free cakes.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID of the cake to get, for free of course.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
 {% api-method-headers %}
 {% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token to track down who is emptying our stocks.
+Bearer access\_token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
+{% api-method-parameter name="Sort" type="string" required=false %}
+
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
+{% api-method-parameter name="PageIndex" type="integer" required=false %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="Offset" type="integer" required=false %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="IsSortDsc" type="boolean" required=false %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="PageSize" type="integer" required=false %}
+
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -42,21 +48,113 @@ Cake successfully retrieved.
 
 ```javascript
 {
-    "name": "Cake's name",
-    "recipe": "Cake's recipe name",
-    "cake": "Binary cake"
+	"model": {
+		"total": 2,
+		"outerResourceList": [{
+				"id": 2,
+				"name": "Inner resource 1",
+				"relatedInnerResourcesIds": null
+			},
+			{
+				"id": 3,
+				"name": "Inner resource 2",
+				"relatedInnerResourcesIds": null
+			}
+		],
+		"name": "Inner resources"
+	},
+	"success": true,
+	"message": "Success"
 }
 ```
 {% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
-{% api-method-response-example httpCode=404 %}
+{% api-method method="post" host="http://localhost:5000" path="/api/outer-inner-resource-pn/inner-resources" %}
+{% api-method-summary %}
+Create a new outer resource
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authentication" type="string" required=true %}
+Bearer access\_token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="name" type="string" required=true %}
+Name of the outer resource
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="relatedInnerResourceIds" type="array" required=true %}
+List of inner resource ids or null
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Could not find a cake matching this query.
+
+{% endapi-method-response-example-description %}
+
+```
+{
+	"success": true,
+	"message": "Inner resource created successfully"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="put" host="http://localhost:5000" path="/api/outer-inner-resource-pn/inner-resources" %}
+{% api-method-summary %}
+Update an outer resource
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authentication" type="string" required=true %}
+Bearer access\_token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="name" type="string" required=true %}
+Name of outer resource
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="relatedInnerResourceIds" type="array" required=true %}
+List of inner resource ids or null
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
 {% endapi-method-response-example-description %}
 
 ```javascript
 {
-    "message": "Ain't no cake like that."
+	"success": true,
+	"message": "Inner resource updated successfully"
 }
 ```
 {% endapi-method-response-example %}
@@ -64,9 +162,9 @@ Could not find a cake matching this query.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="" path="" %}
+{% api-method method="delete" host="http://localhost:5000" path="/api/outer-inner-resource-pn/inner-resources" %}
 {% api-method-summary %}
-
+Delete an outer resource
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -76,10 +174,16 @@ Could not find a cake matching this query.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
-
+{% api-method-parameter name="id" type="string" required=false %}
+Id of the outer resource to delete
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authentication" type="string" required=true %}
+Bearer access\_token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -88,43 +192,13 @@ Could not find a cake matching this query.
 
 {% endapi-method-response-example-description %}
 
-```
-
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-{% api-method method="delete" host="" path="" %}
-{% api-method-summary %}
-
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
-
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
+```javascript
+{
+	"success": true,
+	"message": "Inner resource deleted successfully"
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
