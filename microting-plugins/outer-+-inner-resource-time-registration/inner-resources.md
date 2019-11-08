@@ -94,7 +94,7 @@ Bearer access\_token
 Name of the outer resource
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="relatedInnerResourceIds" type="array" required=true %}
+{% api-method-parameter name="relatedouterResourceIds" type="array" required=true %}
 List of inner resource ids or null
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -139,7 +139,7 @@ Bearer access\_token
 Name of outer resource
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="relatedInnerResourceIds" type="array" required=true %}
+{% api-method-parameter name="relatedOuterResourceIds" type="array" required=true %}
 List of inner resource ids or null
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
