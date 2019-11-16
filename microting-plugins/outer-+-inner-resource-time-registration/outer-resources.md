@@ -135,6 +135,10 @@ Bearer access\_token
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="Id" type="number" required=true %}
+Id of the outer resource
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="name" type="string" required=true %}
 Name of outer resource
 {% endapi-method-parameter %}

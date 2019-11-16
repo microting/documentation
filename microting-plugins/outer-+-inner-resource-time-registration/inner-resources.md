@@ -91,7 +91,7 @@ Bearer access\_token
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="name" type="string" required=true %}
-Name of the outer resource
+Name of the inner resource
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="relatedouterResourceIds" type="array" required=true %}
@@ -135,12 +135,16 @@ Bearer access\_token
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="Id" type="number" required=true %}
+Id of the inner resource
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="name" type="string" required=true %}
-Name of outer resource
+Name of inner resource
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="relatedOuterResourceIds" type="array" required=true %}
-List of inner resource ids or null
+List of outer resource ids or null
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -175,7 +179,7 @@ Delete an inner resource
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=false %}
-Id of the outer resource to delete
+Id of the inner resource to delete
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
