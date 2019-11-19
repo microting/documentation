@@ -1,6 +1,6 @@
 # Resource time registrations
 
-{% api-method method="get" host="http://localhost:5000" path="/api/outer-inner-resource-pn/resource-time-registrations" %}
+{% api-method method="get" host="http://localhost:5000" path="/api/outer-inner-resource-pn/resource-time-registrations/{lastRegistrationId}" %}
 {% api-method-summary %}
 Get time registrations
 {% endapi-method-summary %}
