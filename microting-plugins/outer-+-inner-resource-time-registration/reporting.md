@@ -12,7 +12,7 @@ This endpoint will return up to 10 time registrations at a time.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="lastRegistrationId" type="string" %}
+{% api-method-parameter name="lastRegistrationId" type="string" required=true %}
 ID of the last registration you pulled, starts from 0
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
