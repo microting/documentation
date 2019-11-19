@@ -50,17 +50,17 @@ Set device users associated
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="siteIds" type="array" required=false %}
-A list of siteIds, each representing a Device user
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
 {% api-method-headers %}
 {% api-method-parameter name="Authentication" type="string" required=true %}
 Bearer access\_token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="siteIds" type="array" required=true %}
+A list of siteIds, each representing a Device user
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
