@@ -1,6 +1,6 @@
 # CSV dump for eForm
 
-{% api-method method="get" host="http://locahost:5000" path="api/template-files/csv/{id}" %}
+{% api-method method="get" host="http://locahost:5000" path="/api/template-files/csv/{id}" %}
 {% api-method-summary %}
 Get CSV file
 {% endapi-method-summary %}
