@@ -26,5 +26,6 @@
     * [Association of device users](microting-plugins/outer-+-inner-resource-time-registration/association-of-device-users.md)
     * [Resource time registrations](microting-plugins/outer-+-inner-resource-time-registration/reporting.md)
 * [Integration with Microting Backend](integration-with-microting-backend/README.md)
+  * [CSV dump for eForm](integration-with-microting-backend/csv-dump-for-eform.md)
   * [Device users](integration-with-microting-backend/device-users.md)
 
