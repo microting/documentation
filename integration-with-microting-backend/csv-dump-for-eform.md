@@ -13,7 +13,7 @@ This endpoint allows you to get a CSV dump of all data collected on a specific e
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="number" required=true %}
-ID of the eFOrm you want to get a CSV dump for
+ID of the eForm you want to get a CSV dump for
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="start" type="string" required=false %}
