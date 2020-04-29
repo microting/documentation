@@ -12,8 +12,20 @@ This endpoint allows you to get a CSV dump of all data collected on a specific e
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="id" type="number" required=false %}
-ID of the eForm you want to get a CSV dump for
+{% api-method-parameter name="id" type="number" required=true %}
+ID of the eFOrm you want to get a CSV dump for
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="start" type="string" required=false %}
+DateTime for start of period
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="end" type="number" required=false %}
+DateTime for end of period
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="utcTime" type="boolean" %}
+Whether the time should be in local time or UTC
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
