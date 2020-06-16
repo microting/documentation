@@ -1,22 +1,23 @@
 ---
-description: 'eForm Backend is created using Angular (6.1.10) and C#'
+description: 'Microting Backend is created using Angular (9.1) and C#'
 ---
 
 # Introduction
 
 ## Supported Platforms
 
-| OS | .Net Standard 2.0 | NET Framework 4.6.1 | MS SQL 2016+ | MySQL/MariaDB |
-| :--- | :---: | :---: | :---: | :---: |
-| OSX 10.14.2 | X |  | X | X |
-| Windows 10 | X | X | X | X |
-| Windows Server 2016 | X | X | X | X |
-| Ubuntu 19.04 | X |  | X | X |
-| Ubuntu 18.10 | X |  | X | X |
-| Ubuntu 18.04 | X |  | X | X |
-| Ubuntu 16.04 | X |  | X | X |
+| OS | .Net Standard 2.2 | MySQL/MariaDB |
+| :--- | :---: | :---: |
+| OSX 10.x | X | X |
+| Windows 10 | X | X |
+| Windows Server 2016 | X | X |
+| Ubuntu 20.04 | x | x |
+| Ubuntu 19.04 | X | X |
+| Ubuntu 18.10 | X | X |
+| Ubuntu 18.04 | X | X |
+| Ubuntu 16.04 | X | X |
 
-## Translating eForm Angular Frontend
+## Translating Angular Frontend
 
 | Language | C\# part | Angular part |
 | :--- | :---: | :---: |
