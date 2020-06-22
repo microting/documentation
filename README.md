@@ -1,8 +1,12 @@
 ---
-description: 'Microting Backend is created using Angular (9.1) and C#'
+description: >-
+  Understanding your business whether it is customer satisfaction or check forms
+  should not be difficult or expensive. That's why we started Microting.
 ---
 
 # Introduction
+
+Microting Backend is created using Angular \(9.1\) and C\# with strong focus on open source and testing.
 
 ## Supported Platforms
 
