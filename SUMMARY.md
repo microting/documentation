@@ -29,3 +29,7 @@
   * [CSV dump for eForm](integration-with-microting-backend/csv-dump-for-eform.md)
   * [Device users](integration-with-microting-backend/device-users.md)
 
+## SDK documentation
+
+* [Core](sdk-documentation/core.md)
+
