@@ -2,5 +2,5 @@
 description: Work in progress
 ---
 
-# Core
+# Introduction
 

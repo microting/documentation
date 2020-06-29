@@ -31,5 +31,5 @@
 
 ## SDK documentation
 
-* [Core](sdk-documentation/core.md)
+* [Introduction](sdk-documentation/core.md)
 
