@@ -4,7 +4,7 @@
 
 ### Step 1:
 
-Follow guide to Download and Install Eform-Angular-Frontend project on [Page Installation](https://sites.google.com/s/1R1FZotyoOPczaFaZs13O9XLailEqG6Zy/p/10d-1PjBIFDkMCouo_lsIvyLHE-SCkdaK/edit)
+Follow guide to Download and Install Eform-Angular-Frontend project on ["Installation OSX"](../../install-angular-fronted/installation-osx.md)
 
 ### Step 2:
 
