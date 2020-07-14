@@ -25,7 +25,7 @@ ln -s /mnt/c/Users/yourname/Documents/ Documents
 Now we have the following structure in our home directory of the linux user:  
 /home/ubuntu/Documents  
   
-From now on all sh scripts can be executed inside the Ubuntu terminal.
+From now on all sh scripts can be executed inside the Ubuntu terminal and you can follow the guide for ["Installation"](installation-ubuntu.md) og if you are using Node installed in Windows, you need to follow the guide below.
 
 ### Step 1:
 

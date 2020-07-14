@@ -1,8 +1,12 @@
-# Editing a plugin - Ubuntu
+---
+description: 'The following guide will apply to Ubuntu, OSX and Windows 10 with WSL'
+---
+
+# Editing a plugin
 
 ### Step 1:
 
-Make the edits you want to do.
+Follow the Make the edits you want to do.
 
 ### Step 2:
 
