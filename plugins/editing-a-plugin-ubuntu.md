@@ -4,46 +4,21 @@ description: 'The following guide will apply to Ubuntu, OSX and Windows 10 with 
 
 # Editing a plugin
 
-### Step 1:
+Follow the Installtion [Ubuntu/OSX/Windows \(WSL\)](installing-a-plugin./installation-ubuntu.md) guide and make your changes.
 
-Follow the Make the edits you want to do.
-
-### Step 2:
-
-When you have finished your editing. Do this
+When you have finished your editing, do this:
 
 ```text
-rm -Rf ~/Documents/workspace/microting/eform-angular-machinearea-plugin/eform-client/src/app/plugins/modules/machine-area-pn/
+cd ~
+cd Documents/workspace/microting/eform-angular-machinearea-plugin
+./devgetchanges
 ```
 
-### Step 3:
+Check your changes are the same as expected.
 
 ```text
-cp -av ~/Documents/workspace/miccp -av ~/Documents/workspace/microting/eform-angular-frontend/eform-client/src/app/plugins/modules/machine-area-pn ~/Documents/workspace/microting/eform-angular-machinearea-plugin/eform-client/src/app/plugins/modules/
-roting/eform-angular-frontend/eform-client/src/app/plugins/modules/machine-area-pn eform-angular-machinearea-plugin/eform-client/src/app/plugins/modules/
-```
-
-### Step 4:
-
-```text
-rm -Rf ~/Documents/workspace/microting/eform-angular-machinearea-plugin/eFormAPI/Plugins/MachineArea.Pn/
-```
-
-### Step 5:
-
-```text
-cp -av ~/Documents/workspace/microting/eform-angular-frontend/eFormAPI/Plugins/MachineArea.Pn ~/Documents/workspace/microting/eform-angular-machinearea-plugin/eFormAPI/Plugins/
-```
-
-### Step 6:
-
-```text
-cd ~/Documents/workspace/microting/eform-angular-machinearea-plugin/
-
 git status
 ```
-
-#### OBS! IF CHANGES ARE MADE!
 
 ```text
 git commit -a
@@ -62,6 +37,4 @@ git pull
 ```
 git push 
 ```
-
-#### Last but not least! Await for Microting to accept the changes
 

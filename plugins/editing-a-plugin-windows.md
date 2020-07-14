@@ -1,4 +1,4 @@
-# Editing a plugin - Windows
+# Editing a plugin - Legacy Windows
 
 ### Step 1:
 

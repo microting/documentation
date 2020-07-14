@@ -1,6 +1,6 @@
 # Installation Windows
 
-### Prerequisites
+### Prerequisites for recommended process
 
 Have WLS installed and enabled with Ubuntu 20.04 installed, see ["Install Ubuntu on Windows 10"](https://ubuntu.com/tutorials/ubuntu-on-windows#1-overview).
 
@@ -26,11 +26,11 @@ ln -s /mnt/c/Users/yourname/Documents/ Documents
 Now we have the following structure in our home directory of the linux user:  
 /home/ubuntu/Documents  
   
-From now on all sh scripts can be executed inside the Ubuntu terminal and you can follow the guide for ["Installation"](installation-ubuntu.md) og if you are using Node installed in Windows, you need to follow the guide below.
+From now on all sh scripts can be executed inside the Ubuntu terminal and you can follow the guide for ["Installation"](installation-ubuntu.md). If you are using Node installed in Windows, you need to follow the guide below, since Node for Windows is not able to run inside Ubuntu as well.
 
 ### Step 1:
 
-Follow guide to Download and Install Eform-Angular-Frontend project on ["Installation Windows"](../../install-angular-fronted/installation-windows.md)
+Follow the guide to Download and Install Eform-Angular-Frontend project on ["Installation Windows"](../../install-angular-fronted/installation-windows.md)
 
 ### Step 2:
 

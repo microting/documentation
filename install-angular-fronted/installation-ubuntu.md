@@ -1,4 +1,8 @@
-# Installation Ubuntu
+---
+description: 'The guide applies to Ubuntu, OSX and Windows 10 with WSL enabled'
+---
+
+# Installation Ubuntu, OSX, Windows \(WSL\)
 
 ### Prerequsitions
 
@@ -10,13 +14,16 @@ Follow the guide at
 
 In order for you to not have a password set for root, do the following
 
+```text
 sudo mysql
-
-MariaDB \[\(none\)\]&gt; use mysql; MariaDB \[mysql\]&gt; alter user 'root'@'localhost' identified by ''; MariaDB \[mysql\]&gt; FLUSH PRIVILEGES; &lt;/pre&gt; 
-
-
+MariaDB [(none)]> use mysql; 
+MariaDB [mysql]> alter user 'root'@'localhost' identified by ''; 
+MariaDB [mysql]> FLUSH PRIVILEGES;
+```
 
 ### Step 1:
+
+For OSX, Java is already installed, so this step can be skipped.
 
 ```text
 sudo apt-get install openjdk-8-jre^C
@@ -35,20 +42,25 @@ git clone https://github.com/microting/eform-angular-frontend.git
 
 ### Step 3:
 
+For OSX, follow the guide on [https://nodejs.org/en/download/](https://nodejs.org/en/download/) for installation instructions.  
+For Ubuntu and Windows with WSL do the below.
+
 ```text
-curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+sudo apt-get update
 sudo apt install -y nodejs
 ```
 
 ### Step 4:
 
+```
 cd ~/Documents/workspace/microting/eform-angular-frontend/eform-client
-
-npm install &lt;/pre&gt; 
+npm i
+```
 
 ### Step 5:
 
-Download and install .Net core SDK for UBUNTU [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)
+Download and install .Net Core SDK 2.2 for  [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)
 
 
 

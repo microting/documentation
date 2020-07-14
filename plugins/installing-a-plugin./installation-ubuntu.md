@@ -2,7 +2,7 @@
 description: 'The guide will work on Ubuntu, OSX and Windows 10 with WSL enabled.'
 ---
 
-# Installation
+# Installation Ubuntu/OSX/Windows \(WSL\)
 
 ### Step 1:
 
