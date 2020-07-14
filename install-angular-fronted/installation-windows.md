@@ -1,6 +1,31 @@
 # Installation Windows
 
+### Prerequisites
 
+Have WLS installed and enabled with Ubuntu 20.04 installed, see ["Install Ubuntu on Windows 10"](https://ubuntu.com/tutorials/ubuntu-on-windows#1-overview).
+
+In Windows create the following folder structure, where it's suitable for you on the C: drive  
+Documents\workspace\microting, in this example we asume it's located like this:  
+C:\Users\yourname\Documents\workspace\microting  
+  
+In order for you to be able to do git clones in Ubuntu onto your C: drive, we have to change the mounting of the C: drive.   
+Open the Ubuntu window and execute, see ["Chmod/Chown WSL Improvements"](https://devblogs.microsoft.com/commandline/chmod-chown-wsl-improvements/):
+
+```text
+sudo umount /mnt/c
+sudo mount -t drvfs C: /mnt/c -o metadata
+```
+
+When that is done, we can symbolic link the directory structure, to ensure our Linux scripts work as expected in WSL, so execute the following:
+
+```text
+ln -s /mnt/c/Users/yourname/Documents/ Documents
+```
+
+Now we have the following structure in our home directory of the linux user:  
+/home/ubuntu/Documents  
+  
+From now on all sh scripts can be executed inside the Ubuntu terminal.
 
 ### Step 1:
 
