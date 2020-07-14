@@ -28,12 +28,12 @@ The Microting.eFormBaseCustomerBase project needs to have the following folder s
 
 See the basecustomer project for reference.
 
-Keynotes to have in mind, is that every entity needs to have enherit from the BaseEntity and they need to have a Versioned equivalent of the class. Each Entity needs to implement the following methods:
+Keynotes to have in mind, is that every entity needs to enherit from the BaseEntity and they need to have a Versioned equivalent of the class. Each Entity needs to implement the following methods:
 
 * public async Task Create\(CustomersPnDbAnySql dbContext\)
 * public async Task Update\(CustomersPnDbAnySql dbContext\)
 * public async Task Delete\(CustomersPnDbAnySql dbContext\)
-* private CustomerVersion MapVersions\(CustomersPnDbAnySql dbContext, Customer customer\)
+* private CustomerVersion MapVersions\(CustomersPnDbAnySql dbContext, Customer customer\)  ^ replace CustomerVersion and Customer customer with the respective class names for your entity.
 
 This is to ensure that all entities used in the ecosystem conforms to the same standard.   
 See [https://github.com/microting/eform-basecustomer-base/blob/master/Microting.eFormBaseCustomerBase/Infrastructure/Data/Entities/Customer.cs](https://github.com/microting/eform-basecustomer-base/blob/master/Microting.eFormBaseCustomerBase/Infrastructure/Data/Entities/Customer.cs) for reference.
