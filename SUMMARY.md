@@ -10,6 +10,7 @@
   * [Installation Ubuntu, OSX, Windows \(WSL\)](install-angular-fronted/installation-ubuntu.md)
   * [Ubuntu on Windows 10 WSL](install-angular-fronted/installation-windows.md)
 * [Plugins](plugins/README.md)
+  * [Creating a new plugin](plugins/creating-a-new-plugin.md)
   * [Installing a plugin.](plugins/installing-a-plugin./README.md)
     * [Installation Ubuntu/OSX/Windows \(WSL\)](plugins/installing-a-plugin./installation-ubuntu.md)
     * [Installation Windows](plugins/installing-a-plugin./installation-windows.md)
