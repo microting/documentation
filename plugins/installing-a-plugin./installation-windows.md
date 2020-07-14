@@ -19,6 +19,7 @@ sudo mount -t drvfs C: /mnt/c -o metadata
 When that is done, we can symbolic link the directory structure, to ensure our Linux scripts work as expected in WSL, so execute the following:
 
 ```text
+cd 
 ln -s /mnt/c/Users/yourname/Documents/ Documents
 ```
 
