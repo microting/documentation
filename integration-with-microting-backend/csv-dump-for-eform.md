@@ -12,6 +12,14 @@ This endpoint allows you to get a CSV dump of all data collected on a specific e
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
+{% api-method-parameter name="includeCheckListText" type="boolean" required=false %}
+Wheter the headers should include the containing checklist text
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="gpsCoordinates" type="boolean" required=false %}
+Whether the GPS coordinates should be included in the image urls
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="id" type="number" required=true %}
 ID of the eForm you want to get a CSV dump for
 {% endapi-method-parameter %}
